@@ -4,7 +4,7 @@
 #'
 #' Then we can add a larger paragraph
 #' that can span several
-#' lines
+#' lines.
 #'
 #' @docType package
 #' @name gameday
