@@ -12,7 +12,7 @@
 #' @export
 #' @examples
 #' scores("2014-11-02")
-#' scores("2015-06-02")
+#' scores("2015-01-02")
 #' scores(Sys.Date())
 #'
 

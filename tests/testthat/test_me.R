@@ -34,3 +34,21 @@ test_that("Test with invalid date input", {
 	expect_error(gday(team = "canucks",   date = "2014-111-2"))
 })
 
+
+# test the return type of scores function
+test_that("Test if the scores function returns a data.frame", {
+	expect_is(scores(Sys.Date()), "data.frame")
+})
+
+# Check failure when date is invalid
+test_that("Test when scores function returns error messages", {
+	expect_error(scores("201-111-111"))
+	expect_error(scores("2001-01-01"))
+})
+
+# test scores function when with a few specific team names and scores
+test_that("Test the scores function with a few specific team names and scores", {
+	expect_match(as.character(scores("2014-10-31")[1,1]), "COLUMBUS BLUE JACKETS")
+	expect_equal(scores("2014-10-31")[2,3], 5)
+	expect_match(as.character(scores("2014-10-31")[4,2]), "NASHVILLE PREDATORS")
+})
