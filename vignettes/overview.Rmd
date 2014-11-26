@@ -48,3 +48,24 @@ scores("2015-01-02")
 scores(Sys.Date())
 
 ```
+
+Lastly we produce a list of winners on a specific day
+
+```{r}
+library(plyr)
+suppressPackageStartupMessages(library(dplyr))
+
+# all the winning teams of the current date
+score <- scores("2014-11-15")
+
+# select the winniers of the two teams
+winner <- ddply(score, ~home, function(dat) {
+	if (dat$home_score > dat$away_score) {return(as.character(dat$home))}
+	else {return(as.character(dat$away))}
+	})
+
+# Then change the column name and leave out the winner
+colnames(winner)<-c("home", "winner")
+winner %>%
+    select(winner)
+```
