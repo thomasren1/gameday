@@ -11,7 +11,7 @@ Install `gameday` from GitHub:
 
 
 ```r
-devtools::install_github("thomasren1/gameday")
+devtools::install_github("thomasren1/gameday", build_vignettes = TRUE)
 ```
 
 ## Functions
