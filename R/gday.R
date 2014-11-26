@@ -10,7 +10,7 @@
 #' Suffer no more! You can now ask R directly, without tempting yourself
 #' by firing up your web browser.
 #'
-#' @param team.name The name of your team
+#' @param team The name of your team. Defaults to \code{Canucks}.
 #' @return Logical \code{TRUE} if \code{team.name} has an NHL game today
 #' \code{FALSE} otherwise
 #' @note case in \code{team.name} is ignored
@@ -19,8 +19,15 @@
 #' gday("canucks")
 #' gday("Bruins")
 
-gday <- function(team.name){
+gday <- function(team = "canucks", date = Sys.Date()){
 	url <- paste0('http://live.nhle.com/GameData/GCScoreboard/',
-								Sys.Date(), '.jsonp' )
-	grepl(team.name, getURL(url), ignore.case=TRUE)
+								date, '.jsonp' )
+	assertthat::assert_that(check_date(date))
+	if (internet_connection()) {
+		grepl(team, getURL(url), ignore.case=TRUE)
+	}
+	else {
+		print("I can print the error message like this, or:")
+		stop("computer is not connected to the interent")
+	}
 }

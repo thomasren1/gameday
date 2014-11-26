@@ -10,6 +10,6 @@ A one-line summary of what this package is for
 \details{
 Then we can add a larger paragraph
 that can span several
-lines
+lines.
 }
 
