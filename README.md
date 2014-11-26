@@ -1,4 +1,4 @@
-# Untitled
+# README
 Thomas Ren  
 November 25, 2014  
 gameday
@@ -18,7 +18,7 @@ devtools::install_github("thomasren1/gameday")
 ## Downloading github repo thomasren1/gameday@master
 ## Installing gameday
 ## '/Library/Frameworks/R.framework/Resources/bin/R' --vanilla CMD INSTALL  \
-##   '/private/var/folders/ht/_dxc2k555q54ljp826kfg8sw0000gn/T/RtmphMPc0d/devtools8ca3b086863/thomasren1-gameday-5210ba3'  \
+##   '/private/var/folders/ht/_dxc2k555q54ljp826kfg8sw0000gn/T/RtmpB2MZZV/devtoolsa4549e970b2/thomasren1-gameday-eaaca07'  \
 ##   --library='/Library/Frameworks/R.framework/Versions/3.1/Resources/library'  \
 ##   --install-tests
 ```
@@ -32,18 +32,6 @@ This function checks if the specified team has a match on the specified date.
 
 ```r
 library(gameday)
-```
-
-```
-## Loading required package: RCurl
-```
-
-```
-## Warning: package 'RCurl' was built under R version 3.1.1
-```
-
-```
-## Loading required package: bitops
 ```
 
 ```r
@@ -83,9 +71,4 @@ Further details can be found in the vignette for this package. The vignette can 
 browseVignettes("gameday")
 ```
 
-```
-## No vignettes found by browseVignettes("gameday")
-```
-
 Also the vignette can be viewed online [here](https://github.com/thomasren1/gameday/blob/master/vignettes/overview.Rmd)
-While a markdown version is provided [here](https://github.com/thomasren1/gameday/blob/master/vignettes/overview.md)

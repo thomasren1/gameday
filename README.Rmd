@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "README"
 author: "Thomas Ren"
 date: "November 25, 2014"
 output:
@@ -48,4 +48,3 @@ browseVignettes("gameday")
 ```
 
 Also the vignette can be viewed online [here](https://github.com/thomasren1/gameday/blob/master/vignettes/overview.Rmd)
-While a markdown version is provided [here](https://github.com/thomasren1/gameday/blob/master/vignettes/overview.md)
