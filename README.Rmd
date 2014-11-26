@@ -1,0 +1,51 @@
+---
+title: "Untitled"
+author: "Thomas Ren"
+date: "November 25, 2014"
+output:
+  html_document:
+    keep_md: yes
+---
+gameday
+=======
+
+A package that provides the match information of hockey games
+
+## Installation
+Install `gameday` from GitHub:
+
+```{r}
+devtools::install_github("thomasren1/gameday")
+```
+
+## Functions
+For the current version, `gameday` has two functions: `gday()` and `scores()`.
+
+### gday(team_name, date)
+This function checks if the specified team has a match on the specified date.
+
+```{r}
+library(gameday)
+
+gday("flames", "2014-11-12")
+```
+
+### scores(date)
+
+This function takes the specified date as the input and returns a data.frame with all matches and scores of that day.
+
+```{r}
+# scores on 2014-11-02
+scores("2014-11-02")
+
+```
+
+### Vignette
+Further details can be found in the vignette for this package. The vignette can be viewed by running the following line of code:
+
+```{r}
+browseVignettes("gameday")
+```
+
+Also the vignette can be viewed online [here](https://github.com/thomasren1/gameday/blob/master/vignettes/overview.Rmd)
+While a markdown version is provided [here](https://github.com/thomasren1/gameday/blob/master/vignettes/overview.md)
