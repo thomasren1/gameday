@@ -14,15 +14,6 @@ Install `gameday` from GitHub:
 devtools::install_github("thomasren1/gameday")
 ```
 
-```
-## Downloading github repo thomasren1/gameday@master
-## Installing gameday
-## '/Library/Frameworks/R.framework/Resources/bin/R' --vanilla CMD INSTALL  \
-##   '/private/var/folders/ht/_dxc2k555q54ljp826kfg8sw0000gn/T/RtmpB2MZZV/devtoolsa4549e970b2/thomasren1-gameday-eaaca07'  \
-##   --library='/Library/Frameworks/R.framework/Versions/3.1/Resources/library'  \
-##   --install-tests
-```
-
 ## Functions
 For the current version, `gameday` has two functions: `gday()` and `scores()`.
 
